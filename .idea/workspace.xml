@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="73434a85-8234-4339-a8e9-27d88b05a276" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/tinycv/decolor.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tinycv/equalize_hist.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/tinycv/equalize_hist.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tinycv/haze_removal.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/tinycv/haze_removal.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tinycv/decolor.py" beforeDir="false" afterPath="$PROJECT_DIR$/tinycv/decolor.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,7 +16,7 @@
     <SUITE FILE_PATH="coverage/tiny_cv$haze_removal.coverage" NAME="haze_removal Coverage Results" MODIFIED="1542506205378" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tinycv" />
     <SUITE FILE_PATH="coverage/tiny_cv$colorization2.coverage" NAME="colorization2 Coverage Results" MODIFIED="1542590537564" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tinycv" />
     <SUITE FILE_PATH="coverage/tiny_cv$haze2.coverage" NAME="haze2 Coverage Results" MODIFIED="1542460598183" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tinycv" />
-    <SUITE FILE_PATH="coverage/tiny_cv$decolor.coverage" NAME="decolor Coverage Results" MODIFIED="1542697257706" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tinycv" />
+    <SUITE FILE_PATH="coverage/tiny_cv$decolor.coverage" NAME="decolor Coverage Results" MODIFIED="1542702210879" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tinycv" />
     <SUITE FILE_PATH="coverage/tiny_cv$colorization.coverage" NAME="colorization Coverage Results" MODIFIED="1542590987783" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tinycv" />
   </component>
   <component name="FUSProjectUsageTrigger">
@@ -28,9 +26,10 @@
           <entry key="project.closed" value="1" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.10" value="1" />
+          <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.14" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -39,7 +38,7 @@
           <entry key="ipynb" value="7" />
           <entry key="jpg" value="17" />
           <entry key="md" value="2" />
-          <entry key="png" value="36" />
+          <entry key="png" value="38" />
           <entry key="py" value="22" />
           <entry key="txt" value="1" />
         </counts>
@@ -47,7 +46,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="IPNB" value="7" />
-          <entry key="Image" value="56" />
+          <entry key="Image" value="58" />
           <entry key="Markdown" value="2" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="Python" value="22" />
@@ -56,13 +55,13 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="md" value="192" />
-          <entry key="py" value="11982" />
+          <entry key="py" value="12632" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Markdown" value="192" />
-          <entry key="Python" value="11982" />
+          <entry key="Python" value="12632" />
         </counts>
       </usages-collector>
     </session>
@@ -75,13 +74,23 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tinycv/decolor.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="741">
-              <caret line="54" column="44" lean-forward="true" selection-start-line="54" selection-start-column="44" selection-end-line="54" selection-end-column="44" />
+            <state relative-caret-position="152">
+              <caret line="89" column="5" selection-start-line="89" selection-start-column="5" selection-end-line="89" selection-end-column="5" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tinycv/decolor_img/6.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tinycv/decolor_img/our result/6.png">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -128,16 +137,6 @@
               </folding>
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tinycv/decolor_img/our result/4.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tinycv/decolor_img/our result/5.png">
-          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
     </leaf>
@@ -187,7 +186,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -200,10 +198,23 @@
               <item name="tiny_cv" type="462c0819:PsiDirectoryNode" />
               <item name="tinycv" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="tiny_cv" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tiny_cv" type="462c0819:PsiDirectoryNode" />
+              <item name="tinycv" type="462c0819:PsiDirectoryNode" />
+              <item name="colorization_img" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tiny_cv" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tiny_cv" type="462c0819:PsiDirectoryNode" />
+              <item name="tinycv" type="462c0819:PsiDirectoryNode" />
+              <item name="decolor_img" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -373,13 +384,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6013889" visible="true" weight="0.20607235" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6013889" visible="true" weight="0.20930232" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.3986111" side_tool="true" weight="0.19573644" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.44444445" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.45" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -459,9 +471,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="16" column="52" selection-start-line="16" selection-start-column="52" selection-end-line="16" selection-end-column="52" />
-          <folding>
-            <element signature="e#53#63#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -536,13 +545,7 @@
     <entry file="file://$PROJECT_DIR$/tinycv/decolor_img/3.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/tinycv/decolor_img/6.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/tinycv/decolor_img/our result/1.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tinycv/decolor_img/our result/6.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/tinycv/decolor_img/our result/2.png">
@@ -555,22 +558,6 @@
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/tinycv/decolor_img/our result/5.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tinycv/decolor_img/our result/7.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tinycv/colorization.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="7" column="52" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="56" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tinycv/decolor_img/our result/8.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/tinycv/decolor_img/our result/9.png">
@@ -589,10 +576,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/tinycv/decolor_img/our result/8.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tinycv/decolor_img/our result/7.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tinycv/colorization.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="7" column="52" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="56" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tinycv/decolor_img/6.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tinycv/decolor_img/our result/6.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/tinycv/decolor.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="741">
-          <caret line="54" column="44" lean-forward="true" selection-start-line="54" selection-start-column="44" selection-end-line="54" selection-end-column="44" />
+        <state relative-caret-position="152">
+          <caret line="89" column="5" selection-start-line="89" selection-start-column="5" selection-end-line="89" selection-end-column="5" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>

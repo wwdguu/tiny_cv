@@ -4,14 +4,17 @@ import matplotlib.pyplot as plt
 
 def compute_delta_alpha_l(src_img):
     src_img=src_img.astype(np.float32)/255
-    b,g,r=cv2.split(src_img)
-    Lab=cv2.cvtColor(src_img,cv2.COLOR_BGR2Lab)
+    Lab=cv2.cvtColor(src_img,cv2.COLOR_BGR2LAB)
     L,a,b=cv2.split(Lab)
+    print(np.min(L),np.max(L))
+    print(np.min(a),np.max(a))
+    print(np.min(b),np.max(b))
     h,w=src_img.shape[:2]
     delta=np.zeros((2*h*w-w-h),)
     alpha=0.5*np.ones_like(delta)
     index=0
     l=np.zeros((2*h*w-w-h,9))
+    b, g, r = cv2.split(src_img)
     M=np.concatenate((r[:,:,np.newaxis],g[:,:,np.newaxis],b[:,:,np.newaxis],
                       (r*g)[:,:,np.newaxis],(r*b)[:,:,np.newaxis],(g*b)[:,:,np.newaxis],
                       (r*r)[:,:,np.newaxis],(g*g)[:,:,np.newaxis],(b*b)[:,:,np.newaxis]),axis=2)
@@ -30,7 +33,7 @@ def compute_delta_alpha_l(src_img):
                    alpha[index]=1.
                l[index, :] = M[i, j] - M[i, j+1]
                index += 1
-    return  delta,alpha,l,M
+    return  delta/100,alpha,l,M
 
 def compute_G(delta_g,delta,sigma):
     return np.exp(-(delta_g-delta)**2/(2*sigma**2))
@@ -38,6 +41,7 @@ def compute_G(delta_g,delta,sigma):
 def update_beta(alpha,delta,omega,l,eps=1e-20):
     delta_g=l.dot(omega)
     sigma = float(0.69 * np.std(delta_g))
+    sigma=0.02
     p_G=compute_G(delta_g,delta,sigma)
     n_G=compute_G(delta_g,-delta,sigma)
     beta=alpha*p_G/(alpha*p_G+(np.ones_like(alpha)-alpha)*n_G+eps)
@@ -66,21 +70,28 @@ if __name__=='__main__':
     min_c,max_c=np.min(src_img),np.max(src_img)
     print(min_c,max_c)
 
-    #omega=np.array([2.00, -3.32, 3.04, 6.10, -3.45, 2.94, -2.98, -1.67, -1.00])
-    gray=M.dot(omega).reshape(h,w)
+    #omega = np.array([2.00, -3.32, 3.04, 6.10, -3.45, 2.94, -2.98, -1.67, -1.00])
+    gray=M.dot(omega).reshape((h,w))
     #print(gray)
     min_g,max_g=np.min(gray),np.max(gray)
-    gray=(gray-min_g)/(max_g-min_g)
-    print(min_g,max_g)
-    gray=(gray*255).astype(np.uint8)
+    gray=(((gray-min_g)/(max_g-min_g))*255).astype(np.uint8)
     hist=np.bincount(gray.reshape(-1,))
     plt.plot(range(len(hist)),hist)
     plt.show()
-    min_c,max_c=np.min(gray),np.max(gray)
-    print(min_c,max_c)
     cv2.imshow('g',gray)
     cv2.waitKey(0)
     print(gray.shape)
+
+    gray2,_=cv2.decolor(src_img)
+    hist = np.bincount(gray2.reshape(-1, ))
+    plt.plot(range(len(hist)), hist)
+    plt.show()
+    min_c, max_c = np.min(gray2), np.max(gray2)
+    print(min_c, max_c)
+    cv2.imshow('g', gray2)
+    cv2.waitKey(0)
+    print(gray2.shape)
+
 
 
 
