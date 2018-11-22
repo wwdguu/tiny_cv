@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="73434a85-8234-4339-a8e9-27d88b05a276" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/tiny_cv.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/tiny_cv.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tinycv/decolor.py" beforeDir="false" afterPath="$PROJECT_DIR$/tinycv/decolor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tinycv/decolorv2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tinycv/decolorv3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tinycv/decolorv4.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tinycv/opencv_decolor.py" beforeDir="false" afterPath="$PROJECT_DIR$/tinycv/opencv_decolor.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,7 +19,8 @@
     <SUITE FILE_PATH="coverage/tiny_cv$decolorv2.coverage" NAME="decolorv2 Coverage Results" MODIFIED="1542721155104" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tinycv" />
     <SUITE FILE_PATH="coverage/tiny_cv$colorization2.coverage" NAME="colorization2 Coverage Results" MODIFIED="1542590537564" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tinycv" />
     <SUITE FILE_PATH="coverage/tiny_cv$colorization.coverage" NAME="colorization Coverage Results" MODIFIED="1542714931090" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tinycv" />
-    <SUITE FILE_PATH="coverage/tiny_cv$decolor.coverage" NAME="decolor Coverage Results" MODIFIED="1542720168681" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tinycv" />
+    <SUITE FILE_PATH="coverage/tiny_cv$opencv_decolor.coverage" NAME="opencv_decolor Coverage Results" MODIFIED="1542854742420" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tinycv" />
+    <SUITE FILE_PATH="coverage/tiny_cv$decolor.coverage" NAME="decolor Coverage Results" MODIFIED="1542861175837" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tinycv" />
     <SUITE FILE_PATH="coverage/tiny_cv$haze_removal.coverage" NAME="haze_removal Coverage Results" MODIFIED="1542506205378" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tinycv" />
     <SUITE FILE_PATH="coverage/tiny_cv$haze2.coverage" NAME="haze2 Coverage Results" MODIFIED="1542460598183" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tinycv" />
     <SUITE FILE_PATH="coverage/tiny_cv$v2.coverage" NAME="v2 Coverage Results" MODIFIED="1542548617516" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tinycv" />
@@ -77,12 +80,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="903" />
+          <entry key="py" value="1924" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="903" />
+          <entry key="Python" value="1924" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -90,13 +93,13 @@
           <entry key="bmp" value="1" />
           <entry key="jpg" value="1" />
           <entry key="png" value="8" />
-          <entry key="py" value="2" />
+          <entry key="py" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Image" value="10" />
-          <entry key="Python" value="2" />
+          <entry key="Python" value="7" />
         </counts>
       </usages-collector>
     </session>
@@ -109,8 +112,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tinycv/decolor.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1707">
-              <caret line="111" lean-forward="true" selection-start-line="111" selection-end-line="111" />
+            <state relative-caret-position="374">
+              <caret line="22" column="23" lean-forward="true" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tinycv/opencv_decolor.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="118" column="26" selection-start-line="118" selection-start-column="26" selection-end-line="118" selection-end-column="26" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -134,21 +149,6 @@
               <caret line="318" column="4" selection-start-line="318" selection-start-column="4" selection-end-line="318" selection-end-column="4" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tinycv/decolor_img/our result/23.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tinycv/dst.jpg">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tinycv/decolor_img/23.png">
-          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -203,6 +203,8 @@
         <option value="$PROJECT_DIR$/tinycv/colorization2.py" />
         <option value="$PROJECT_DIR$/tinycv/equalize_hist.py" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/tinycv/decolorv2.py" />
+        <option value="$PROJECT_DIR$/tinycv/opencv_decolor.py" />
         <option value="$PROJECT_DIR$/tinycv/decolor.py" />
       </list>
     </option>
@@ -280,7 +282,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.decolorv2">
+  <component name="RunManager" selected="Python.decolor">
     <configuration name="colorization" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="tiny_cv" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -369,7 +371,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="v2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="opencv_decolor" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="tiny_cv" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -382,7 +384,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tinycv/v2.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tinycv/opencv_decolor.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -393,18 +395,18 @@
     </configuration>
     <list>
       <item itemvalue="Python.colorization" />
-      <item itemvalue="Python.v2" />
       <item itemvalue="Python.colorization2" />
       <item itemvalue="Python.decolor" />
       <item itemvalue="Python.decolorv2" />
+      <item itemvalue="Python.opencv_decolor" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.decolorv2" />
         <item itemvalue="Python.decolor" />
+        <item itemvalue="Python.opencv_decolor" />
+        <item itemvalue="Python.decolorv2" />
         <item itemvalue="Python.colorization" />
         <item itemvalue="Python.colorization2" />
-        <item itemvalue="Python.v2" />
       </list>
     </recent_temporary>
   </component>
@@ -425,12 +427,12 @@
     <frame x="1974" y="-11" width="1867" height="1092" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6013889" visible="true" weight="0.16236971" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6013889" visible="true" weight="0.16236971" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.3986111" side_tool="true" weight="0.19573644" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.67142075" visible="true" weight="0.4630593" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.67142075" visible="true" weight="0.29760665" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -439,14 +441,14 @@
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Compute Code Lines" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.32857928" side_tool="true" visible="true" weight="0.4630593" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.32857928" side_tool="true" visible="true" weight="0.29760665" />
       <window_info anchor="bottom" id="Terminal" order="12" />
       <window_info anchor="bottom" id="Python Console" order="13" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Remote Host" order="3" />
-      <window_info active="true" anchor="right" id="SciView" order="4" visible="true" weight="0.27866155" />
+      <window_info anchor="right" id="SciView" order="4" visible="true" weight="0.27866155" />
       <window_info anchor="right" id="Database" order="5" />
     </layout>
   </component>
@@ -457,16 +459,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/tinycv/colorization2.py" />
-    <entry file="file://$PROJECT_DIR$/tinycv/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tinycv/colorization_img/example.bmp">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tinycv/haze_img/4.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/tinycv/haze_img/2.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -599,16 +591,6 @@
     <entry file="file://$PROJECT_DIR$/tinycv/dst.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/tinycv/colorization.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="7" column="52" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="56" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tinycv/decolor_img/our result/23.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -635,10 +617,59 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/tinycv/decolorv4.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tinycv/decolorv3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="86" column="7" lean-forward="true" selection-start-line="86" selection-start-column="7" selection-end-line="86" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tinycv/decolorv2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="41" column="24" lean-forward="true" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tinycv/opencv_decolor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="118" column="26" selection-start-line="118" selection-start-column="26" selection-end-line="118" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tinycv/colorization.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="7" column="52" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="56" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tinycv/decolor.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1707">
-          <caret line="111" lean-forward="true" selection-start-line="111" selection-end-line="111" />
+        <state relative-caret-position="374">
+          <caret line="22" column="23" lean-forward="true" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>

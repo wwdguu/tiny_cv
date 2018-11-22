@@ -52,7 +52,7 @@ class Decolor:
         grad_b=self.cal_grad_vector_single_channel(b)
         grad_g=self.cal_grad_vector_single_channel(g)
         grad_r=self.cal_grad_vector_single_channel(r)
-        level=0.05
+        level=1e-9
         t1=np.zeros_like(grad_b)
         t2=np.zeros_like(grad_b)
         t3=np.zeros_like(grad_b)
@@ -90,8 +90,10 @@ class Decolor:
         B=np.zeros_like(l)
         for i in range(l.shape[1]):
             B[:,i]=l[:,i]*delta
-        print(l.shape)
+        b=np.sum(B,axis=0)
         A=l.T.dot(l)
+        omega=np.linalg.solve(A,b)
+        print('omega:',omega)
         print(B.shape)
         _,X=cv2.solve(A,B.T,flags=cv2.DECOMP_NORMAL)
         return X
@@ -115,10 +117,8 @@ def decolor(src_img):
         iter_count+=1
         pre_E=E
         val = l.dot(omega)
-        tmp = val - delta
-        tmp1 = val + delta
-        pos_G=((1+alpha)/2)*np.exp(-0.5*tmp**2/(obj.sigma**2))
-        neg_G=((1-alpha)/2)*np.exp(-0.5*tmp1**2/(obj.sigma**2))
+        pos_G=((1+alpha)/2)*np.exp(-0.5*(val-delta)**2/(obj.sigma**2))
+        neg_G=((1-alpha)/2)*np.exp(-0.5*(val+delta)**2/(obj.sigma**2))
         expSum=pos_G+neg_G
         tmp2=np.zeros_like(expSum)
         tmp2[expSum==0.]=1.
@@ -127,6 +127,7 @@ def decolor(src_img):
         for i in range(9):
             omega[i]=np.sum(Mt[i,:]*expterm)
         E=obj.cal_energy(omega,delta,l)
+        print(alpha)
         if iter_count>max_iter:
             break
     gray=obj.gray_contruct(omega,src_img)
@@ -139,8 +140,12 @@ if __name__=='__main__':
     src_img = cv2.imread('decolor_img/6.png', 1)
     src_img=src_img
     gray,color_boost=decolor(src_img)
+    hist=np.bincount(gray.reshape(-1,))
+    plt.plot(range(len(hist)),hist)
+    plt.show()
     plt.imshow(gray,cmap='gray')
     plt.show()
+
     plt.imshow(color_boost[:,:,::-1])
     plt.show()
 
